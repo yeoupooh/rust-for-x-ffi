@@ -9,29 +9,37 @@
 # 64bit
 ## build rust lib
 ```
-cd rust
+cd rust_lib
 cargo build --target=x86_64-pc-windows-msvc --release
 ```
 ## run node app
 
 ```
-cd node
+cd node_ffi_napi
 nvm use 14.18.3 64
 yarn install --force
-node index.js
+node node_app.js
 ```
 
 # 32bit
 ## build rust lib
 ```
-cd rust
+cd rust_lib
 cargo build --target=i686-pc-windows-msvc --release
 ```
-## run node app
 
+## run node app
+- NOTE make sure node runtime should be a 32bit executuble.
 ```
-cd node
+cd node_ffi_napi
 nvm use 14.18.3 32
 yarn install --force
 node index.js
+```
+
+## run php app
+- NOTE make sure php runtime should be a 32bit executuble.
+```
+cd php_ffi
+php php_app.php
 ```
