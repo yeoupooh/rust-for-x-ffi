@@ -6,17 +6,32 @@
 - node v14 (64bit): tested
 - rust v1.63: tested
 
-# build rust lib
+# 64bit
+## build rust lib
 ```
 cd rust
-cargo build --release
-
+cargo build --target=x86_64-pc-windows-msvc --release
 ```
-# run node app
+## run node app
 
 ```
 cd node
-yarn
+nvm use 14.18.3 64
+yarn install --force
 node index.js
+```
 
+# 32bit
+## build rust lib
+```
+cd rust
+cargo build --target=i686-pc-windows-msvc --release
+```
+## run node app
+
+```
+cd node
+nvm use 14.18.3 32
+yarn install --force
+node index.js
 ```
