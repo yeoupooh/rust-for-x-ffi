@@ -2,16 +2,16 @@
 
 # Rust library
 
-## Build 64bit Rust library
-```
-cd rust_lib
-cargo build --target=x86_64-pc-windows-msvc --release
-```
+## prerequisites
+- Rust v1.64.0
+- MS Visual Studio 19 Build Tools
 
-## Build 32bit Rust library
+
+## Build Rust library
+- If you want to add more target, update build.target value in rust/.cargo/config.toml
 ```
 cd rust_lib
-cargo build --target=i686-pc-windows-msvc --release
+cargo build --release
 ```
 
 # Node ffi-napi
