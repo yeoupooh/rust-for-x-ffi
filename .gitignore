@@ -1,2 +1,10 @@
-node_modules/
+# rust binaries
 target/
+
+# node files
+node_modules/
+
+# qt files
+build-*/
+**/*.user
+

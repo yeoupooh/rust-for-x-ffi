@@ -48,3 +48,12 @@ node index.js
 cd php_ffi
 php php_app.php
 ```
+
+# Qt v6
+
+## Prerequisites
+- Qt v6
+
+## Run 64bit Qt app
+- Open qt_cli_app.pro on Qt Creator
+- Build and run
