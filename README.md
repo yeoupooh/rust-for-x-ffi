@@ -57,3 +57,7 @@ php php_app.php
 ## Run 64bit Qt app
 - Open qt_cli_app.pro on Qt Creator
 - Build and run
+
+# References
+- Python FFI: https://docs.python.org/3/library/ctypes.html
+
